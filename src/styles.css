@@ -1,0 +1,17 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.flash-button {
+  animation: flash 0.5s infinite alternate;
+}
+
+@keyframes flash {
+  0% {
+    background-color: initial;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
