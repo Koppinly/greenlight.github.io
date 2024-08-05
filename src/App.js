@@ -31,9 +31,7 @@ Light.propTypes = {
 };
 
 const DecisionComponent = withOptimizely(({ optimizely }) => {
-  console.time("useDecision");
   const [decision] = useDecision("stoplights");
-  console.timeEnd("useDecision");
   const [showEventTriggered, setShowEventTriggered] = useState(false);
 
   const trackEvent = () => {
